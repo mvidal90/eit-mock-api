@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mockapi</title>
+    <link rel="stylesheet" href="/sass/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar__container">
+        <div class="container">
+            <h1>Bùsqueda de canciones</h1>
+        </div>
+    </header>
+    <main class="pt-4">
+        <div class="container">
+            <form class="form__container d-flex" onsubmit="searchMusic(event)">
+                <div class="form__input-group">
+                    <input id="search" placeholder="Buscar..." class="form__input"/>
+                </div>
+                <button class="btn btn__primary"><i class="fa-solid fa-search m-0"></i></button>
+            </form>
+            <div id="music_container" class="grid"></div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/readData.js"></script>
+</body>
+</html>
